@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    
+    <title>Mi aplicacion</title>
+    
+    <!--grupo CSS-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/mixtecos.css">       
+    
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js"></script>
+    <script src="phonegap.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <!--principal-->
+    <div data-role="page" id="principal" >   
+      
+      <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1 class="titulo">Lo'o Tu'un</h1>
+      </div>    
+      
+      <div data-role="main" class="ui-content" >
+        <div class="encabezado">
+          <h1> Ichi </h1>
+        </div>
+
+
+        <div id="opciones" >
+        <div class="mixteco-custom">
+        <a href="#busqueda" id="fav" data-icon="custom" class="btn-opciones ui-btn ui-corner-all ui-btn-icon-right"  style="background-color:#F7E604">Favoritos</a>
+          </div>
+          <div  data-role="controlgroup" style="margin:0 auto;" class="div-botones">
+          </div>
+        </div>
+
+      </div>
+      
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-iconpos="bottom">
+          <ul>
+            <li><a href="#" data-icon="plus">ga</a></li>
+            <li><a href="#" data-icon="info">chindeé</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--principal-->
+    <!--busqueda-->
+    <div data-role="page" id="busqueda">
+
+      <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1 class="titulo">Lo'o Tu'un</h1>
+      </div>    
+      <div data-role="main" class="ui-content" >
+      
+        <div class="encabezado">
+          <h1 id="encabezado_busqueda"></h1>
+        </div>
+
+<form>
+ <input data-type="search" id="buscar-mix">
+</form>
+
+<div>
+ <p> Aquí Agrega el audio, ya estan los botones </p>
+</div>
+
+<div id="fav" data-icon="custom" class="btn-opciones ui-btn ui-corner-all ui-btn-icon-right"style="background-color:#">¿Hola que haces? / Kuña ke'e un</div>
+
+<div id="fav" data-icon="custom" class="btn-opciones ui-btn ui-corner-all ui-btn-icon-right"style="background-color:#">Adios hasta la proxima / Anda inka ichi</div>
+
+<div id="fav" data-icon="custom" class="btn-opciones ui-btn ui-corner-all ui-btn-icon-right"style="background-color:#">¿Donde esta un Hospital? / Mi yoo iin hospital</div>
+
+<div id="fav" data-icon="custom" class="btn-opciones ui-btn ui-corner-all ui-btn-icon-right"style="background-color:#">¿Puedo usar su baño? / La kivi kuni ñu'un baño</div>
+
+
+
+<ul data-role="listview" data-split-icon="star" data-inset="true" data-filter="true" data-input="#buscar-mix" id="palabras_categoria">
+</ul>
+
+     
+      </div>
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-iconpos="bottom">
+          <ul>
+            <li><a href="#principal" data-icon="back">ndeokuñi/Regresar</a></li>
+            <li><a href="#" data-icon="plus">ga</a></li>
+            <li><a href="#" data-icon="info">chindeé</a></li>
+          </ul>
+        </div>
+      </div>      
+    </div>
+    <!--busqueda-->
+  </body>
+</html>
